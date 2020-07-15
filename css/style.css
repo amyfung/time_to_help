@@ -25,7 +25,7 @@ body {
 }
 
 .subtitle1 {
-    color: #5d5d5d;
+    color: #000;
     text-transform: uppercase;
     margin-left: 3%;
     margin-right: 3%;
@@ -94,8 +94,9 @@ h4,
 
 h5,
 .h5 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
+    color: #5d5d5d;
 }
 
 h6,
@@ -161,7 +162,7 @@ h6,
     color: #fff;
 }
 
-*:focus {
+* {
     outline: none !important;
     box-shadow: none;
 }
@@ -905,6 +906,10 @@ textarea.form-control {
 
 .spacing {
     padding-bottom: 4%;
+}
+
+.spacing1 {
+    padding-bottom: 2%;
 }
 
 .mb-45 {
