@@ -664,6 +664,12 @@ ul.dropdown-menu>li>a:hover,
     margin-bottom: 25px;
 }
 
+.thumb {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+}
+
 .about-info h3 {
     margin-top: 15px;
 }
