@@ -85,7 +85,7 @@
         <div class="container">
             <div class="row mb-5 justify-content-center">
                 <div class="col-6 text-center">
-                    <div class="btn-group btn-group-toggle" class="buttons">
+                    <div class="btn-group btn-group-toggle" style="padding-top: 5%" class="buttons">
                         <button class="btn active " type="radio" onclick="myFunction()"><a href="#IDofYourDivYouWantToGoTo">All</a></button>
                         <button class="btn " type="radio" id="button" id="interviewSect"><a class="showSingle" target="1">Wireframe</a></button>
                         <button class="btn " type="radio" id="button" id="personaSect"><a class="showSingle" target="2">Invision</a></button>
@@ -94,6 +94,17 @@
                 </div>
             </div>
             <!--Wireframe Prototype Start-->
+            <div id="div1" class="targetDiv" style="display:none;">
+                <h2 class="subtitle">Wireframe</h2>
+
+                <button class="accordion">
+                <h4 class="subtitle1" style="padding-top:3px">Video<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+                <button class="accordion">
+                <h4 class="subtitle1">Design Rationale<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+            </div>
+
             <!--Wireframe Prototype End-->
         </div>
     </section>
@@ -109,13 +120,13 @@
                 <div class="col-lg-6">
                     <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/themefisher" target="_blank"><i class="ti-facebook mr-3"></i></a>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="ti-facebook mr-3"></i></a>
                             </li>
-                            <li class="list-inline-item"><a href="https://twitter.com/themefisher" target="_blank"><i class="ti-twitter mr-3"></i></a>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="ti-twitter mr-3"></i></a>
                             </li>
-                            <li class="list-inline-item"><a href="https://github.com/themefisher/" target="_blank"><i class="ti-github mr-3"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
-                            <li class="list-inline-item"><a href="https://dribbble.com/themefisher/" target="_blank"><i class="ti-dribbble mr-3"></i></a></li>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="ti-github mr-3"></i></a></li>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="ti-dribbble mr-3"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -140,5 +151,6 @@
     <!-- Main Script -->
     <script src="js/script.js"></script>
     <script src="js/scroll_top.js"></script>
+    <script src="js/navbar2.js"></script>
 
 </html>

@@ -29,6 +29,7 @@ body {
     text-transform: uppercase;
     margin-left: 3%;
     margin-right: 3%;
+    border-bottom: 1px solid #999999;
 }
 
 .subtitle1:hover {
@@ -114,14 +115,6 @@ h6,
 
 .section-sm {
     padding: 60px 0px;
-}
-
-.black {
-    color: #000;
-}
-
-.blue {
-    color: #5778ff;
 }
 
 .btn {
