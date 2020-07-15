@@ -1,20 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,600,700|Work+Sans:400,700,800");
+:root {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 html {
     overflow-x: hidden;
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.166667px;
     line-height: 1.7em;
-    color: #818385;
+    color: #333;
+}
+
+.subtitle {
+    padding-top: 40px;
+    color: #000;
+}
+
+.subtitle1 {
+    color: #5d5d5d;
+    text-transform: uppercase;
+    padding-top: 30px;
 }
 
 p {
-    color: #818385;
+    color: #333;
 }
 
 h1,
@@ -29,7 +45,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Muli", Roboto, sans-serif;
     color: #000;
     font-weight: 600;
 }
@@ -42,7 +58,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: 42px;
+    font-size: 30px;
     line-height: 52px;
 }
 
@@ -159,6 +175,7 @@ a:hover {
 
 .page-title h1 {
     position: relative;
+    margin-top: 10%;
     padding-bottom: 30px;
 }
 
@@ -196,10 +213,12 @@ a:hover {
 .banner .cd-headline {
     font-size: 56px;
     line-height: 70px;
+    padding-top: 10%;
 }
 
 .banner-3 {
     position: relative;
+    padding-top: 10%;
 }
 
 .main-nav .header-top-socials a {
@@ -207,6 +226,19 @@ a:hover {
     letter-spacing: 1px;
     font-size: 14px;
     padding: 20px 6px;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: #fff;
+    height: 30%;
 }
 
 .navbar-nav .nav-link {
@@ -584,6 +616,11 @@ ul.dropdown-menu>li>a:hover,
 .about-list li {
     text-transform: capitalize;
     color: #000;
+}
+
+.paragraph {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .progress {

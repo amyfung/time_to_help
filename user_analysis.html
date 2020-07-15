@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Thomson-Minimal Portfolio Temaplate</title>
+    <title>User Analysis</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- ** Plugins Needed for the Project ** -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -29,61 +31,149 @@
 
     <!-- Header Start -->
 
-    <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+    <nav class="navbar navbar-expand-lg  main-nav " class="fixed-header" id="navbar" id="header">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="" class="img-fluid">
+                <img src="images/logo.png" style="width:40%" alt="" class="img-fluid">
             </a>
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="ti-align-justify"></span>
-	  </button>
+        <span class="ti-align-justify"></span>
+      </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item  active"><a class="nav-link" href="index.html">Home</a></li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="about.html">About Me</a></li>
-                            <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item  active"><a class="nav-link" href="about.html">About</a></li>
 
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Milestones</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item" href="portfolio-1.html">Portfolio Masonary</a></li>
-                            <li><a class="dropdown-item" href="portfolio-2.html">Portfolio lightbox</a></li>
-                            <li><a class="dropdown-item" href="portfolio-3.html">Portfolio 2 column</a></li>
-                            <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Details</a></li>
+                            <li><a class="dropdown-item" href="user_analysis.html">User Analysis</a></li>
+                            <li><a class="dropdown-item" href="ideation.html">Ideation</a></li>
+                            <li><a class="dropdown-item" href="p_and_e.html">Interactive Prototyping and Evaluation</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                            <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                            <li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
 
-                            <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thank_you.html">Thank you!</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header Close -->
+    <!-- Header End -->
 
+    <section id="content" class="page-title section pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="text-capitalize mb-0 text-lg">User Analysis</h1>
+                    </div>
+                    <div class="navlinks" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interview">User Interview Takeaways</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personas">User Personas</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Task Analyses</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Domain Analyses</a></li>
+                        </ul>
+                    </div>
+                    <!-- User Interview Takeaways Start -->
+                    <h2 class="subtitle" id="interview">User Interview Takeaways</h2>
+                    <h4 class="subtitle1" style="padding-top:3px">Interviewee #1</h4>
+                    <div class="paragraph">
+                        <p>This user <b>has attended protests before, but does not attend them often</b>. The user<b> does not know first aid</b>, but only knows how to deal with seizures because they have a sibling who experiences them. The user does not
+                            know how to organize a protest, but they do know some protestor rights, though not all. The user <b>decided to attend protests</b> during the pandemic because they do not have a family member who is immunocompromised; otherwise
+                            they would not have gone. However, the user expressed that they <b>feel scared protesting during the pandemic</b> because they live close to New York City. The user has heard <b>conflicting information</b> on what to bring
+                            to a protest: they do not know if they should bring their phone or not.
+                        </p>
+                        <p class="style:padding-top:5px">For petitions and donations, the user usually <b>signs and donates to organizations they see on social media</b>, and <b>does not actively seek out organizations with which to be involved</b>.The user <b>does not know how to check which organizations are 
+                        credible</b>.
+                        </p>
+                    </div>
+                    <h4 class="subtitle1">Interviewee #2</h4>
+                    <div class="paragraph">
+                        <p>The user <b>has attended multiple protests</b>, and <b>seems very knowledgeable about 
+                        each of the protests</b>. The user knows basic first aid, but <b>would much rather 
+                        prefer having a trained medical person around</b> if someone has been tear gassed or hit with rubber bullets. They would not bring a phone or wallet with them to a protest, but they would bring a mask (both for protection and hiding
+                            identity), comfortable shoes, and cash. They said they <b>do know most of their rights, but has 
+                        heard many people say they do not know all of their rights</b>. The user also said that many of the protests they heard of had already been in progress for a while, so they could not attend. They said that <b>donating to and signing petitions of 
+                        uncredible organizations are not a big issue</b>.
+                        </p>
+                    </div>
+                    <h4 class="subtitle1">Interviewee #3</h4>
+                    <div class="paragraph">
+                        <p>This user has <b>attended protests before</b> and seems like they are <b>very actively involved with several movements</b> that are already well established and have members that are experienced in community organizing. This has
+                            helped them
+                            <b>organize other forms of protests</b>, including: walkouts, press conferences, and marches as well as <b>knowing how to take care of themselves before, during, and after a protest</b>. When asked if they knew what they would
+                            do if someone near them were to get injured, they were hesitant about their ability, and also commented that they <b>only knew the basics of first aid</b>, as well as the hypothetical treatment of tear gas. They also seemed
+                            unsure of the amount of petitions they have signed, and also stated that they only sign the petitions and do not share them afterwards. They do not actively seek out organizations or sites to which to donate. Something I found
+                            to be interesting about their aftercare from a protest is that they suggested that one do “literally nothing,” especially because we see a culture of excessive productivity that make people want to keep going even though they
+                            do not give themselves the adequate care for their mental, emotional, and physical self.
+                        </p>
+                    </div>
+                    <h4 class="subtitle1">Interviewee #4</h4>
+                    <div class="paragraph">
 
+                    </div>
+                    <h4 class="subtitle1">Interviewee #5</h4>
+                    <div class="paragraph">
+
+                    </div>
+                    <h4 class="subtitle1">Interviewee #6</h4>
+                    <div class="paragraph">
+
+                    </div>
+                    <div class="paragraph">
+                        <p>Interviewee #6 is similarly <b>concerned with social issues</b> and is <b>motivated by 
+                        a desire to improve others’ lives and society as a whole</b>, but he <b>feels that 
+                        he can do little to make a difference</b> ("At the end of the day, I'm not really seeing change").
+                        </p>
+                        </p>
+                        His family is against activism and has caused him to <b>think of activism as a waste of time</b> (“My family is from a culture that especially doesn’t like to waste time, and they consider one person advocating for a cause a waste”),
+                        even though he <b>tries to stay informed</b> (“I make sure to check what's trending every day") and is <b>angered by what 
+                        he sees</b> ("It makes me boil up inside seeing what police do and how people still don't care"). This is especially so for protests, which he views as potentially dangerous even if they are peaceful ("My parents think protests
+                        are too dangerous. I couldn't even do contact sports in school"). He <b>thinks 
+                        certain actions are not effective and that wide-scale change is not truly 
+                        possible</b>, because there are many people, many of whom are in power, who are against social movements and are unwilling to concede, and because people are motivated by trends and emotion, which subside (“The momentum is probably
+                        gonna die out soon"). <b>Accounts of real experiences create the most 
+                        impact for him</b> (“Anything affecting people affects me and makes me pay attention more."). He is <b>most likely to take action if he knows he is able 
+                        to reach and genuinely help a large number of people</b> ("I wish I could give a speech to a million people").
+                        </p>
+                        <p>
+                            This interviewee would likely benefit from resources catered to different generations and cultures, especially those that are translated, as he could present these to his family, who is a major obstacle against his involvement in social movements. He
+                            says he looks for ways to take action and that he definitely needs to do so, but his (lack of) actions do not reflect that: he could benefit from guides as to how to begin taking action and guides as to how and why to protest,
+                            since he is particularly unfamiliar with protesting. More importantly, Interviewee #6 needs to be shown that supporting causes is not a waste of time, an idea he brought up repeatedly and was originally sourced from his parents
+                            but which he now seems to believe himself. We could provide examples of how various organizations and causes and even individuals have effected change. He prefers to donate skills over time and money, so demonstrating ways
+                            for him to do so (and thus exercise his skills and not waste time) would be helpful. Finally, since this interviewee is motivated by helping other people, we can demonstrate how issues affect people and what he can do to help
+                            them.
+                        </p>
+                    </div>
+
+                    <!-- User Interview Takeaways End -->
+                    <!-- Personas Start -->
+                    <h2 class="subtitle">Personas</h2>
+                    <h4 class="subtitle1">1: Kelly</h4>
+                    <h4 class="subtitle1">2: Susan</h4>
+                    <h4 class="subtitle1">3: </h4>
+                    <!-- Personas End -->
+                    <!-- Task Analysis Start -->
+                    <h2 class="subtitle">Task Analysis</h2>
+                    <!-- Task Analysis End -->
+                    <!-- Domain Analysis End -->
+                    <h2 class="subtitle">Domain Analysis</h2>
+                    <!-- Domain Analysis End -->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="footer">
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6">
-                    <p class="mb-0">Copyrights © 2019. Designed & Developed by <a href="themefisher.com" class="text-white">Themefisher</a></p>
+                    <p class="mb-0">Nah <a href="themefisher.com" class="text-white">Themefisher</a></p>
                 </div>
                 <div class="col-lg-6">
                     <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
@@ -101,6 +191,12 @@
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function() {
+            var contentPlacement = $('#header').position().top + $('#header').height();
+            $('#content').css('margin-top', contentPlacement);
+        });
+    </script>
     <!-- jQuery -->
     <script src="plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
