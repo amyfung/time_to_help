@@ -115,6 +115,14 @@ h6,
     padding: 60px 0px;
 }
 
+.black {
+    color: #000;
+}
+
+.blue {
+    color: #5778ff;
+}
+
 .btn {
     padding: 18px 38px;
     border: 2px solid transparent;
