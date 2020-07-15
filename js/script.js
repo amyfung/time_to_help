@@ -1,41 +1,39 @@
-
-
-(function ($) {
+(function($) {
     'use strict';
-    
-AOS.init({
-    once: true
-});
+
+    AOS.init({
+        once: true
+    });
 
     // ----------------------- 
-        // Progress Bar--------------------
-        // 
-        // 
+    // Progress Bar--------------------
+    // 
+    // 
 
-    $(window).on ('load', function (){ 
-          
-        $('.progress-bar').each(function(){
-                var width = $(this).data('percent');
-                $(this).css({'transition': 'width 3s'});
-                $(this).appear(function() {
-                    console.log('hello');
-                    $(this).css('width', width + '%');
-                    $(this).find('.count').countTo({
-                        from: 0,
-                        to: width,
-                        speed: 3000,
-                        refreshInterval: 50
-                    });
+    $(window).on('load', function() {
+
+        $('.progress-bar').each(function() {
+            var width = $(this).data('percent');
+            $(this).css({ 'transition': 'width 3s' });
+            $(this).appear(function() {
+                console.log('hello');
+                $(this).css('width', width + '%');
+                $(this).find('.count').countTo({
+                    from: 0,
+                    to: width,
+                    speed: 3000,
+                    refreshInterval: 50
                 });
             });
-        }); 
+        });
+    });
 
     $('.owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        autoplay:true,
-        dots:false,
-        autoplayTimeout:8000
+        items: 1,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        autoplayTimeout: 8000
     });
 
     // Shuffle js filter and masonry
@@ -47,14 +45,14 @@ AOS.init({
         buffer: 1
     });
 
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+    jQuery('input[name="shuffle-filter"]').on('change', function(evt) {
         var input = evt.currentTarget;
         if (input.checked) {
             myShuffle.filter(input.value);
         }
     });
 
-     $('.portfolio-gallery').each(function () {
+    $('.portfolio-gallery').each(function() {
         $(this).find('.popup-gallery').magnificPopup({
             type: 'image',
             gallery: {
@@ -62,6 +60,8 @@ AOS.init({
             }
         });
     });
+
+
 
 
 })(jQuery);

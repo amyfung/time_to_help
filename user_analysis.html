@@ -8,10 +8,11 @@
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- ** Plugins Needed for the Project ** -->
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
@@ -21,6 +22,10 @@
     <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -43,9 +48,9 @@
 
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item  active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item  active"><a class="nav-link" href="index.html" id="button">Home</a></li>
 
-                    <li class="nav-item  active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item  active"><a class="nav-link" href="about.html" id="button">About</a></li>
 
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Milestones</a>
@@ -63,7 +68,7 @@
     </nav>
 
     <!-- Header End -->
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
     <section id="content" class="page-title section pb-0">
         <div class="container">
             <div class="row">
@@ -71,29 +76,49 @@
                     <div class="text-center">
                         <h1 class="text-capitalize mb-0 text-lg">User Analysis</h1>
                     </div>
-                    <div class="navlinks" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interview">User Interview Takeaways</a></li>
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personas">User Personas</a></li>
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Task Analyses</a></li>
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Domain Analyses</a></li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" portfolio ">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-10 text-center">
+                    <div class="btn-group btn-group-toggle" style="padding-top: 5%" class="buttons">
+                        <button class="btn active " type="radio" onclick="myFunction()"><a class="showSingle" target="1 2 3 4">All</a></button>
+                        <button class="btn " type="radio" id="button" id="interviewSect"><a class="showSingle" target="1">User Interviews</a></button>
+                        <button class="btn " type="radio" id="button" id="personaSect"><a class="showSingle" target="2">User Personas</a></button>
+                        <button class="btn " type="radio" id="button"><a class="showSingle" target="3">Task Analyses</a></button>
+                        <button class="btn " type="radio" id="button"><a class="showSingle" target="4">Domain Analysis</a></button>
                     </div>
-                    <!-- User Interview Takeaways Start -->
-                    <h2 class="subtitle" id="interview">User Interview Takeaways</h2>
-                    <h4 class="subtitle1" style="padding-top:3px">Interviewee #1</h4>
+                </div>
+            </div>
+            <!-- User Interview Takeaways Start -->
+            <div id="div1" class="targetDiv" style="display:none;" id="interview">
+
+                <h2 class="subtitle">User Interview Takeaways</h2>
+
+
+                <button class="accordion">
+                    <h4 class="subtitle1" style="padding-top:3px"> Interviewee #1<i class="fa fa-plus" aria-hidden="true"></i></h4>
+                </button>
+                <div class="panel">
                     <div class="paragraph">
                         <p>This user <b>has attended protests before, but does not attend them often</b>. The user<b> does not know first aid</b>, but only knows how to deal with seizures because they have a sibling who experiences them. The user does not
                             know how to organize a protest, but they do know some protestor rights, though not all. The user <b>decided to attend protests</b> during the pandemic because they do not have a family member who is immunocompromised; otherwise
                             they would not have gone. However, the user expressed that they <b>feel scared protesting during the pandemic</b> because they live close to New York City. The user has heard <b>conflicting information</b> on what to bring
                             to a protest: they do not know if they should bring their phone or not.
                         </p>
-                        <p class="style:padding-top:5px">For petitions and donations, the user usually <b>signs and donates to organizations they see on social media</b>, and <b>does not actively seek out organizations with which to be involved</b>.The user <b>does not know how to check which organizations are 
+                        <p class="style:padding-top:5px ">For petitions and donations, the user usually <b>signs and donates to organizations they see on social media</b>, and <b>does not actively seek out organizations with which to be involved</b>.The user <b>does not know how to check which organizations are 
                         credible</b>.
                         </p>
                     </div>
-                    <h4 class="subtitle1">Interviewee #2</h4>
-                    <div class="paragraph">
+                </div>
+                <button class="accordion">
+                <h4 class="subtitle1 ">Interviewee #2<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+                <div class="panel">
+                    <div class="paragraph ">
                         <p>The user <b>has attended multiple protests</b>, and <b>seems very knowledgeable about 
                         each of the protests</b>. The user knows basic first aid, but <b>would much rather 
                         prefer having a trained medical person around</b> if someone has been tear gassed or hit with rubber bullets. They would not bring a phone or wallet with them to a protest, but they would bring a mask (both for protection and hiding
@@ -102,8 +127,12 @@
                         uncredible organizations are not a big issue</b>.
                         </p>
                     </div>
-                    <h4 class="subtitle1">Interviewee #3</h4>
-                    <div class="paragraph">
+                </div>
+                <button class="accordion">
+                <h4 class="subtitle1">Interviewee #3<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+                <div class="panel">
+                    <div class="paragraph ">
                         <p>This user has <b>attended protests before</b> and seems like they are <b>very actively involved with several movements</b> that are already well established and have members that are experienced in community organizing. This has
                             helped them
                             <b>organize other forms of protests</b>, including: walkouts, press conferences, and marches as well as <b>knowing how to take care of themselves before, during, and after a protest</b>. When asked if they knew what they would
@@ -113,60 +142,130 @@
                             do not give themselves the adequate care for their mental, emotional, and physical self.
                         </p>
                     </div>
-                    <h4 class="subtitle1">Interviewee #4</h4>
+                </div>
+                <button class="accordion">
+                <h4 class="subtitle1 ">Interviewee #4<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+                <div class="panel">
                     <div class="paragraph">
+                        <p>This user has<b>been active in movements and protests</b> but <b>does not have experience in organizing</b> themself. They have <b>basic knowledge in first aid and what to bring to protests</b>. They are also <b>active in signing petitions</b>                            and although
+                            <b>not financially able to donate</b>, are retweeting and <b>sharing posts to spread awareness</b>. They are <b>well aware of how to care for themself in a protest during COVID-19</b>. They are <b>not well-informed on other resources available for protestors</b>.
+                            They also <b>commented on the credibility of several donation organizations and petitions</b> and said that they “just trust that the people asking for money genuinely need it and are not trying to take advantage of people”
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion">
+                <h4 class="subtitle1 ">Interviewee #5<i class="fa fa-plus" aria-hidden="true"></i></h4>
+            </button>
+                <div class="panel">
+                    <div class="paragraph">
+                        <p>Interviewee #5 <b>has been involved</b> in movements <b>but wants to contribute more</b>. She has seen people, including celebrities and companies, speak up, but she thinks their <b>activism appears performative and fails to make a difference</b>                            ("Companies and celebrities are all posting, but do they really care?"). At the same time, she is <b>concerned that her own activism and maybe even 
+                        activism in general is insufficient to foster change</b> ("I think it really takes a personal epiphany for people to change their ways or care about a cause they previously didn't care about"), particularly during this pandemic,
+                            when she <b>cannot protest because a member of her family is 
+                        immunocompromised</b>. She is <b>frustrated by misinformation</b>, which is frequently supported and spread by her family and friends and which she is not always able to debunk, because they come in such large volumes or are technically
+                            true but incredibly misleading. Although she cares about certain causes, when she encounters people with opposing arguments, she <b>finds herself 
+                        doubting these causes</b> ("I definitely care about many causes, but sometimes I hear people in authority, like the President, discrediting them. It's often fake and just slander, but sometimes I can't help but to question whether
+                            they are even slightly right, and it makes me doubt myself"). One of the primary issues that deters her is <b>not being listened to</b> or <b>being 
+                        insulted for her passion</b> ("When I've tried to have these conversations, people ignored me or called me a SJW”). She is most <b>mobilized by statistics 
+                        and facts and when she knows she is helping people</b> ("I'm motivated when I see statistics that bring the extent of the issue to light").
+                        </p>
+                        <p>
+                            This interviewee <b>would benefit from educational resources</b>, particularly objective information, about causes and why they are necessary. This would help her debunk the misinformation that concerns her and combat attacks
+                            against legitimate causes. She could also benefit from <b>protesting tips and information</b> and <b>information about ways to support movements and why these methods are effective</b>.
+                        </p>
 
                     </div>
-                    <h4 class="subtitle1">Interviewee #5</h4>
-                    <div class="paragraph">
-
-                    </div>
-                    <h4 class="subtitle1">Interviewee #6</h4>
-                    <div class="paragraph">
-
-                    </div>
-                    <div class="paragraph">
+                    <img src="images/interviewee5.png" alt="interviewee #5 concept board" class="in-text-image img-fluid spacing">
+                </div>
+                <button class="accordion">
+            <h4 class="subtitle1 ">Interviewee #6<i class="fa fa-plus" aria-hidden="true"></i></h4>
+        </button>
+                <div class="panel">
+                    <div class="paragraph ">
                         <p>Interviewee #6 is similarly <b>concerned with social issues</b> and is <b>motivated by 
                         a desire to improve others’ lives and society as a whole</b>, but he <b>feels that 
-                        he can do little to make a difference</b> ("At the end of the day, I'm not really seeing change").
+                        he can do little to make a difference</b> ("At the end of the day, I 'm not really seeing change").
                         </p>
                         </p>
                         His family is against activism and has caused him to <b>think of activism as a waste of time</b> (“My family is from a culture that especially doesn’t like to waste time, and they consider one person advocating for a cause a waste”),
-                        even though he <b>tries to stay informed</b> (“I make sure to check what's trending every day") and is <b>angered by what 
-                        he sees</b> ("It makes me boil up inside seeing what police do and how people still don't care"). This is especially so for protests, which he views as potentially dangerous even if they are peaceful ("My parents think protests
-                        are too dangerous. I couldn't even do contact sports in school"). He <b>thinks 
+                        even though he <b>tries to stay informed</b> (“I make sure to check what's trending every day ") and is <b>angered by what 
+                        he sees</b> ("It makes me boil up inside seeing what police do and how people still don 't care"). This is especially so for protests, which he views as potentially dangerous even if they are peaceful ("My parents think protests
+                        are too dangerous. I couldn't even do contact sports in school "). He <b>thinks 
                         certain actions are not effective and that wide-scale change is not truly 
                         possible</b>, because there are many people, many of whom are in power, who are against social movements and are unwilling to concede, and because people are motivated by trends and emotion, which subside (“The momentum is probably
-                        gonna die out soon"). <b>Accounts of real experiences create the most 
-                        impact for him</b> (“Anything affecting people affects me and makes me pay attention more."). He is <b>most likely to take action if he knows he is able 
+                        gonna die out soon"). <b>Accounts of real experiences create the most impact for him</b> (“Anything affecting people affects me and makes me pay attention more."). He is <b>most likely to take action if he knows he is able 
                         to reach and genuinely help a large number of people</b> ("I wish I could give a speech to a million people").
                         </p>
                         <p>
                             This interviewee would likely benefit from resources catered to different generations and cultures, especially those that are translated, as he could present these to his family, who is a major obstacle against his involvement in social movements. He
-                            says he looks for ways to take action and that he definitely needs to do so, but his (lack of) actions do not reflect that: he could benefit from guides as to how to begin taking action and guides as to how and why to protest,
-                            since he is particularly unfamiliar with protesting. More importantly, Interviewee #6 needs to be shown that supporting causes is not a waste of time, an idea he brought up repeatedly and was originally sourced from his parents
-                            but which he now seems to believe himself. We could provide examples of how various organizations and causes and even individuals have effected change. He prefers to donate skills over time and money, so demonstrating ways
-                            for him to do so (and thus exercise his skills and not waste time) would be helpful. Finally, since this interviewee is motivated by helping other people, we can demonstrate how issues affect people and what he can do to help
-                            them.
+                            says he looks for ways to take action and that he definitely needs to do so, but his (lack of) actions do not reflect that: he could benefit from <b>guides as to how to begin taking action</b> and
+                            <b>guides as to how and why to protest</b>, since he is particularly unfamiliar with protesting. More importantly, Interviewee #6 <b>needs to be shown that supporting causes is not a waste of time</b>, an idea he brought up
+                            repeatedly and was originally sourced from his parents but which he now seems to believe himself. We could provide <b>examples of how various organizations and causes and even individuals have effected change</b>. He prefers
+                            to <b>donate skills over time and money</b>, so demonstrating ways for him to do so (and thus exercise his skills and not waste time) would be helpful. Finally, since this interviewee is motivated by helping other people, we
+                            can <b>demonstrate how issues affect people and what he can do to help them</b>.
                         </p>
                     </div>
-
-                    <!-- User Interview Takeaways End -->
-                    <!-- Personas Start -->
-                    <h2 class="subtitle">Personas</h2>
-                    <h4 class="subtitle1">1: Kelly</h4>
-                    <h4 class="subtitle1">2: Susan</h4>
-                    <h4 class="subtitle1">3: </h4>
-                    <!-- Personas End -->
-                    <!-- Task Analysis Start -->
-                    <h2 class="subtitle">Task Analysis</h2>
-                    <!-- Task Analysis End -->
-                    <!-- Domain Analysis End -->
-                    <h2 class="subtitle">Domain Analysis</h2>
-                    <!-- Domain Analysis End -->
                 </div>
             </div>
+            <!-- User Interview Takeaways End -->
+            <!-- Personas Start -->
+            <div id="div2" class="targetDiv" style="display:none;" id="personas">
+                <h2 class="subtitle">Personas</h2>
+                <h4 class="subtitle1" style="padding-top:3px">1: Kelly</h4>
+                <h4 class="subtitle1">2: Susan</h4>
+                <img src=images/Susan.png alt="" class="img-fluid">
+                <h4 class="subtitle1">3: </h4>
+            </div>
+
+            <!-- Personas End -->
+            <!-- Task Analysis Start -->
+            <div id="div3" class="targetDiv" style="display:none;" id="tasks">
+                <h2 class="subtitle">Task Analysis</h2>
+            </div>
+            <!-- Task Analysis End -->
+            <!-- Domain Analysis End -->
+            <div id="div4" class="targetDiv" style="display:none;" id="domain">
+                <h2 class="subtitle" id="domain">Domain Analysis</h2>
+                <h4 class="subtitle1" style="padding-top:3px">People</h4>
+                <ul class="paragraph">
+                    <li>Current and potential activists</li>
+                    <li>College students and others who lack time and/or knowledge about a certain cause</li>
+                    <li>Political representatives</li>
+                </ul>
+                <h4 class="subtitle1">Websites</h4>
+                <ul class="paragraph">
+                    <li>External donation websites</li>
+                    <li>External petition websites</li>
+                    <li>Organizations’ websites</li>
+                    <li>Current websites/documents with compilations of resources and information</li>
+                    <li>Social media (to share information/activities/events from the website)</li>
+                    <li>Representatives’ websites</li>
+                    <li>Educational/news websites</li>
+                    <li>Map website (for protests/events)</li>
+                </ul>
+                <h4 class="subtitle1">Applications</h4>
+                <ul class="paragraph">
+                    <li>External donation websites</li>
+                    <li>External petition websites</li>
+                    <li>Organizations’ websites</li>
+                    <li>Current websites/documents with compilations of resources and information</li>
+                    <li>Social media (to share information/activities/events from the website)</li>
+                    <li>Representatives’ websites</li>
+                    <li>Educational/news websites</li>
+                    <li>Map website (for protests/events)</li>
+                </ul>
+                <h4 class="subtitle1">Objects</h4>
+                <ul class="paragraph">
+                    <li>Books (for educational resources)</li>
+                    <li>Protest items (recommended in protest tips)</li>
+                    <li>Donation items</li>
+                </ul>
+            </div>
+            <!-- Domain Analysis End -->
         </div>
+        </div>
+        </div>
+
     </section>
 
     <section class="footer">
@@ -191,12 +290,6 @@
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function() {
-            var contentPlacement = $('#header').position().top + $('#header').height();
-            $('#content').css('margin-top', contentPlacement);
-        });
-    </script>
     <!-- jQuery -->
     <script src="plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
@@ -214,5 +307,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
     <!-- Main Script -->
     <script src="js/script.js"></script>
+    <script src="js/scroll_top.js"></script>
+    <script src="js/navbar2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </html>
