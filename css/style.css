@@ -387,6 +387,13 @@ ul.dropdown-menu>li>a:hover,
     -o-transform: scaleY(1);
 }
 
+.mySlides {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
 @media (max-width: 575px) {
     .navbar-nav .dropdown-menu {
         position: absolute;
