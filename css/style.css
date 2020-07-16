@@ -125,12 +125,12 @@ h6,
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
-    box-shadow: #999999 0px 0px 0px 0px;
+    box-shadow: none;
 }
 
 .btn:focus {
-    outline: 0px;
-    border: 0px;
+    outline: none;
+    border: none;
     box-shadow: none;
     color: #5778ff;
 }
@@ -157,6 +157,11 @@ h6,
 
 * {
     outline: none !important;
+    box-shadow: none !important;
+}
+
+#button {
+    outline: none;
     box-shadow: none;
 }
 
@@ -164,6 +169,7 @@ h6,
 .clicked {
     color: none;
     border: none;
+    outline: none;
 }
 
 .btn-white {
@@ -175,6 +181,7 @@ h6,
 .btn-white:hover {
     background: transparent;
     color: #fff;
+    outline: none;
 }
 
 a {

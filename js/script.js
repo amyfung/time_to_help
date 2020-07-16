@@ -61,6 +61,16 @@
         });
     });
 
+    $("#button").click(function() {
+        $("#button").addClass('button-clicked');
+    });
+
+    $(function() {
+        $('.showSingle').click(function() {
+            $('.targetDiv').not('#div' + $(this).attr('target')).hide();
+            $('#div' + $(this).attr('target')).toggle();
+        });
+    });
 
 
 
