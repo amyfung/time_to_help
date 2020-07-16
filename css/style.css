@@ -600,6 +600,12 @@ ul.dropdown-menu>li>a:hover,
     margin-right: auto;
 }
 
+.presentation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .overlay-content h5 {
     text-transform: capitalize;
     background: rgba(255, 255, 255, 0.9);
